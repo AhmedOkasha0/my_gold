@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_gold_app/ui/Home/Home_screen.dart';
 import 'package:my_gold_app/ui/OnBoarding_screen/boarding_item.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -82,7 +83,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   alignment: Alignment.center,
                   decoration: BoxDecoration(),
                   child: (ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context,HomeScreen.routeName);
+                    },
                     child: Text(
                       'Continue',
                       style: TextStyle(
